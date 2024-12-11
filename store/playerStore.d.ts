@@ -17,6 +17,8 @@ interface PlayerState {
     setVolume: (volume: number) => void;
     isShowMultiView: boolean;
     setIsShowMultiView: (isShowMultiView: boolean) => void;
+    isShowTagView: boolean;
+    setIsShowTagView: (isShowTagView: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<Omit<import('zustand').StoreApi<PlayerState>, "persist"> & {
     persist: {

@@ -4,6 +4,12 @@ export declare class MultiViewSource {
     url: string;
     constructor(thumbnailUrl: string, title: string, url: string);
 }
+export declare class TagProps {
+    seconds: number;
+    title: string;
+    iconType: string;
+    constructor(seconds: number, title: string, iconType: string);
+}
 export type HogakPlayerProps = {
     title?: string;
     isPlay?: boolean;
@@ -12,4 +18,5 @@ export type HogakPlayerProps = {
     width?: number;
     height?: number;
     multiViewSources?: MultiViewSource[];
+    tags?: TagProps[];
 };
