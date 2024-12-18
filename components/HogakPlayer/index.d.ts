@@ -1,3 +1,3 @@
 import { HogakPlayerProps } from './interfaces';
 
-export declare function HogakPlayer(props: HogakPlayerProps): import("react/jsx-runtime").JSX.Element;
+export declare const HogakPlayer: import('../../../node_modules/react').ForwardRefExoticComponent<HogakPlayerProps & import('../../../node_modules/react').RefAttributes<unknown>>;
