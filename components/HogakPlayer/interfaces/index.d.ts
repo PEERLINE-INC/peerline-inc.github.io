@@ -5,13 +5,21 @@ export declare class MultiViewSource {
     constructor(thumbnailUrl: string, title: string, url: string);
 }
 export declare class TagProps {
+    id: string | number;
     seconds: number;
     title: string;
-    iconType: string;
-    constructor(seconds: number, title: string, iconType: string);
+    iconUrl: string;
+    constructor(id: string | number, seconds: number, title: string, iconUrl: string);
+}
+export declare class TagMenuProps {
+    id: string | number;
+    title: string;
+    iconUrl: string;
+    constructor(id: string | number, title: string, iconUrl: string);
 }
 export type OnClickAddTagEventObject = {
-    name: string;
+    id: string | number;
+    title: string;
     seconds: number;
 };
 export type HogakPlayerProps = {
@@ -24,5 +32,6 @@ export type HogakPlayerProps = {
     height?: number | undefined;
     multiViewSources?: MultiViewSource[];
     tags?: TagProps[];
+    tagMenus?: TagMenuProps[];
     onClickAddTag?: (data: OnClickAddTagEventObject) => void;
 };

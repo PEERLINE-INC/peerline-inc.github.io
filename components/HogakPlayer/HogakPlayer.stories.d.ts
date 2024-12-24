@@ -66,13 +66,37 @@ declare const meta: {
                 value: {
                     name: "object";
                     value: {
+                        id: {
+                            name: "string";
+                        };
                         seconds: {
                             name: "number";
                         };
                         title: {
                             name: "string";
                         };
-                        iconType: {
+                        iconUrl: {
+                            name: "string";
+                        };
+                    };
+                };
+            };
+        };
+        tagMenus: {
+            defaultValue: string;
+            description: string;
+            type: {
+                name: "array";
+                value: {
+                    name: "object";
+                    value: {
+                        id: {
+                            name: "string";
+                        };
+                        title: {
+                            name: "string";
+                        };
+                        iconUrl: {
                             name: "string";
                         };
                     };
@@ -103,9 +127,15 @@ declare const meta: {
             url: string;
         }[];
         tags: {
+            id: string;
             seconds: number;
             title: string;
-            iconType: string;
+            iconUrl: string;
+        }[];
+        tagMenus: {
+            id: string;
+            title: string;
+            iconUrl: string;
         }[];
     };
 };
