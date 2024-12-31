@@ -111,6 +111,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onChangeClipDuration: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -121,6 +125,7 @@ declare const meta: {
         setIsPlay: () => void;
         onBack: () => void;
         onClickAddTag: (data: OnClickAddTagEventObject) => void;
+        onChangeClipDuration: (data: number[]) => void;
         multiViewSources: {
             thumbnailUrl: string;
             title: string;

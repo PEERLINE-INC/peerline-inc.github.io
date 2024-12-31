@@ -34,4 +34,5 @@ export type HogakPlayerProps = {
     tags?: TagProps[];
     tagMenus?: TagMenuProps[];
     onClickAddTag?: (data: OnClickAddTagEventObject) => void;
+    onChangeClipDuration?: (data: number[]) => void;
 };

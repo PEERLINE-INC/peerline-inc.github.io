@@ -21,6 +21,8 @@ interface PlayerState {
     setIsShowMultiView: (isShowMultiView: boolean) => void;
     isShowTagView: boolean;
     setIsShowTagView: (isShowTagView: boolean) => void;
+    isShowClipView: boolean;
+    setIsShowClipView: (isShowClipView: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<Omit<import('zustand').StoreApi<PlayerState>, "persist"> & {
     persist: {
