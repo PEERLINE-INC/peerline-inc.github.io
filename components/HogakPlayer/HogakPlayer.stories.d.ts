@@ -115,6 +115,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onChangeFullScreen: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -126,6 +130,7 @@ declare const meta: {
         onBack: () => void;
         onClickAddTag: (data: OnClickAddTagEventObject) => void;
         onChangeClipDuration: (data: number[]) => void;
+        onChangeFullScreen: (isFullScreen: boolean) => void;
         multiViewSources: {
             thumbnailUrl: string;
             title: string;
