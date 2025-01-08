@@ -119,6 +119,15 @@ declare const meta: {
             description: string;
             action: string;
         };
+        enableDefaultFullscreen: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        onClickTagButton: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -131,6 +140,7 @@ declare const meta: {
         onClickAddTag: (data: OnClickAddTagEventObject) => void;
         onChangeClipDuration: (data: number[]) => void;
         onChangeFullScreen: (isFullScreen: boolean) => void;
+        onClickTagButton: () => void;
         multiViewSources: {
             thumbnailUrl: string;
             title: string;

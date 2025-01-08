@@ -24,15 +24,5 @@ interface PlayerState {
     isShowClipView: boolean;
     setIsShowClipView: (isShowClipView: boolean) => void;
 }
-declare const usePlayerStore: import('zustand').UseBoundStore<Omit<import('zustand').StoreApi<PlayerState>, "persist"> & {
-    persist: {
-        setOptions: (options: Partial<import('zustand/middleware').PersistOptions<PlayerState, PlayerState>>) => void;
-        clearStorage: () => void;
-        rehydrate: () => void | Promise<void>;
-        hasHydrated: () => boolean;
-        onHydrate: (fn: (state: PlayerState) => void) => () => void;
-        onFinishHydration: (fn: (state: PlayerState) => void) => () => void;
-        getOptions: () => Partial<import('zustand/middleware').PersistOptions<PlayerState, PlayerState>>;
-    };
-}>;
+declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
