@@ -1,8 +1,9 @@
 export declare class MultiViewSource {
     thumbnailUrl: string;
     title: string;
+    description: string;
     url: string;
-    constructor(thumbnailUrl: string, title: string, url: string);
+    constructor(thumbnailUrl: string, title: string, description: string, url: string);
 }
 export declare class TagProps {
     id: string | number;
@@ -27,6 +28,7 @@ export type HogakPlayerProps = {
     isPlay?: boolean;
     setIsPlay?: (isPlay: boolean) => void;
     onBack?: () => void;
+    backIconType?: 'close' | 'arrowLeft';
     url: string;
     width?: number | undefined;
     height?: number | undefined;
@@ -38,4 +40,5 @@ export type HogakPlayerProps = {
     enableDefaultFullscreen?: boolean;
     onChangeFullScreen?: (isFullScreen: boolean) => void;
     onClickTagButton?: () => void;
+    onClickClipSave?: () => void;
 };

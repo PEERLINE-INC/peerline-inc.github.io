@@ -107,6 +107,11 @@ declare const meta: {
             description: string;
             action: string;
         };
+        backIconType: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
         onClickAddTag: {
             description: string;
             action: string;
@@ -128,6 +133,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onClickClipSave: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -141,9 +150,11 @@ declare const meta: {
         onChangeClipDuration: (data: number[]) => void;
         onChangeFullScreen: (isFullScreen: boolean) => void;
         onClickTagButton: () => void;
+        onClickClipSave: () => void;
         multiViewSources: {
             thumbnailUrl: string;
             title: string;
+            description: string;
             url: string;
         }[];
         tags: {
@@ -157,6 +168,7 @@ declare const meta: {
             title: string;
             iconUrl: string;
         }[];
+        backIconType: "arrowLeft";
     };
 };
 export default meta;

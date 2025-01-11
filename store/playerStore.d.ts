@@ -7,6 +7,8 @@ interface PlayerState {
     setPip: (pip: boolean) => void;
     isPlay: boolean;
     setIsPlay: (isPlay: boolean) => void;
+    isReady: boolean;
+    setIsReady: (isReady: boolean) => void;
     isSeek: boolean;
     setIsSeek: (isSeek: boolean) => void;
     duration: number;
@@ -23,6 +25,8 @@ interface PlayerState {
     setIsShowTagView: (isShowTagView: boolean) => void;
     isShowClipView: boolean;
     setIsShowClipView: (isShowClipView: boolean) => void;
+    backIconType: 'close' | 'arrowLeft';
+    setBackIconType: (backIconType: 'close' | 'arrowLeft') => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
