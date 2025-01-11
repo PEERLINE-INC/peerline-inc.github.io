@@ -27,6 +27,10 @@ interface PlayerState {
     setIsShowClipView: (isShowClipView: boolean) => void;
     backIconType: 'close' | 'arrowLeft';
     setBackIconType: (backIconType: 'close' | 'arrowLeft') => void;
+    skipDirection: 'left' | 'right' | null;
+    setSkipDirection: (skipDirection: 'left' | 'right' | null) => void;
+    isViewThumbMarker: boolean;
+    setIsViewThumbMarker: (isViewThumbMarker: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
