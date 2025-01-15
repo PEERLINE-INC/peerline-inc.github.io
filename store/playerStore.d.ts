@@ -17,6 +17,10 @@ interface PlayerState {
     setPlayed: (played: number) => void;
     volume: number;
     setVolume: (volume: number) => void;
+    speed: number;
+    setSpeed: (speed: number) => void;
+    quality: number;
+    setQuality: (quality: number) => void;
     isFullScreen: boolean;
     setIsFullScreen: (isFullScreen: boolean) => void;
     isShowMultiView: boolean;
