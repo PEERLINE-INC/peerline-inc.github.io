@@ -137,6 +137,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onClickTagSave: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -151,6 +155,7 @@ declare const meta: {
         onChangeFullScreen: (isFullScreen: boolean) => void;
         onClickTagButton: () => void;
         onClickClipSave: () => void;
+        onClickTagSave: () => void;
         multiViewSources: {
             thumbnailUrl: string;
             title: string;

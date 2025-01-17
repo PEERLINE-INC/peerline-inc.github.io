@@ -35,6 +35,8 @@ interface PlayerState {
     setSkipDirection: (skipDirection: 'left' | 'right' | null) => void;
     isViewThumbMarker: boolean;
     setIsViewThumbMarker: (isViewThumbMarker: boolean) => void;
+    isShowTagSaveView: boolean;
+    setIsShowTagSaveView: (isShowTagSaveView: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
