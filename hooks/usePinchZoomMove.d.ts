@@ -13,5 +13,6 @@ interface SizeState {
 export default function usePinchZoomAndMove(videoRef: React.RefObject<HTMLDivElement>, zoomPluginRef: React.MutableRefObject<any>): {
     offset: OffsetState;
     size: SizeState;
+    currentScale: number;
 };
 export {};
