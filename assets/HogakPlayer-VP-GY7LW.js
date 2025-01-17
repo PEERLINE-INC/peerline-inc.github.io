@@ -1,4 +1,4 @@
-import{j as e}from"./inheritsLoose-C5PyBqJG.js";import{useMDXComponents as t}from"./index-FeUjBnvO.js";import{M as l,d as a,C as o}from"./index-E7qIUsJJ.js";import{S as i,B as c}from"./HogakPlayer.stories-D_xSnmBg.js";import"./index-uubelm5h.js";import"./iframe-D6pkQXLv.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-B_J8iUie.js";import"./index-EfKdj8Ok.js";import"./index-DrFu-skq.js";import"./index-D3eZ-H7s.js";function s(r){const n={code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",p:"p",pre:"pre",...t(),...r.components};return e.jsxs(e.Fragment,{children:[e.jsx(l,{of:i}),`
+import{j as e}from"./inheritsLoose-Dx3Ufxix.js";import{useMDXComponents as t}from"./index-FeUjBnvO.js";import{M as l,d as a,C as i}from"./index-C_UR8TxJ.js";import{S as o,B as c}from"./HogakPlayer.stories-BpmpMh1N.js";import"./index-uubelm5h.js";import"./iframe-pDlGY4P_.js";import"../sb-preview/runtime.js";import"./index-Dei0BBcc.js";import"./index-B_J8iUie.js";import"./index-EfKdj8Ok.js";import"./index-DrFu-skq.js";function s(r){const n={code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",p:"p",pre:"pre",...t(),...r.components};return e.jsxs(e.Fragment,{children:[e.jsx(l,{of:o}),`
 `,e.jsx(n.h1,{id:"hogakplayer",children:"HogakPlayer"}),`
 `,e.jsx(n.hr,{}),`
 `,e.jsx(a,{of:c}),`
@@ -30,13 +30,15 @@ const playerRef = useRef<{ getCurrentSeconds: () => number } | null>(null);
     </div>
   );
 `})}),`
-`,e.jsx(n.h3,{id:"setclipviewisshow-boolean",children:e.jsx(n.code,{children:"setClipView(isShow: boolean)"})}),`
-`,e.jsx(n.p,{children:"클립 모드를 설정합니다."}),`
+`,e.jsx(n.h3,{id:"setclipviewisshow-boolean-initialcurrentseconds-number",children:e.jsx(n.code,{children:"setClipView(isShow: boolean, initialCurrentSeconds?: number)"})}),`
+`,e.jsxs(n.p,{children:["클립 모드를 설정합니다. ",e.jsx("br",{}),`
+initialCurrentSeconds 가 제공되지 않으면, 현재 재생 중인 시간을 기준으로 클립 뷰를 설정합니다. `,e.jsx("br",{}),`
+initialCurrentSeconds 가 제공되면, 해당 시간을 기준으로 클립 뷰를 설정합니다.`]}),`
 `,e.jsx(n.h4,{id:"예시-코드-1",children:"예시 코드"}),`
 `,e.jsx(n.pre,{children:e.jsx(n.code,{className:"language-tsx",children:`import React, { useRef } from 'react';
 import { HogakPlayer } from './HogakPlayer';
 
-const playerRef = useRef<{ setClipView: (value: boolean) => void } | null>(null);
+const playerRef = useRef<{ setClipView: (value: boolean, clipValues?: number[]) => void } | null>(null);
 
   const handleOnClipView = () => {
     if (playerRef.current) {
@@ -137,4 +139,4 @@ const playerRef = useRef<{ seekTo: (value: number, type: "seconds" | "fraction")
   };
 `})}),`
 `,e.jsx(n.h2,{id:"props",children:"Props"}),`
-`,e.jsx(o,{})]})}function k(r={}){const{wrapper:n}={...t(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(s,{...r})}):s(r)}export{k as default};
+`,e.jsx(i,{})]})}function R(r={}){const{wrapper:n}={...t(),...r.components};return n?e.jsx(n,{...r,children:e.jsx(s,{...r})}):s(r)}export{R as default};
