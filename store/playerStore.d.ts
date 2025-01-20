@@ -39,6 +39,12 @@ interface PlayerState {
     setIsShowTagSaveView: (isShowTagSaveView: boolean) => void;
     isPanoramaMode: boolean;
     setIsPanoramaMode: (isPanoramaMode: boolean) => void;
+    isDisableClip: boolean;
+    setIsDisableClip: (isDisableClip: boolean) => void;
+    isDisableTag: boolean;
+    setIsDisableTag: (isDisableTag: boolean) => void;
+    isDisableMultiView: boolean;
+    setIsDisableMultiView: (isDisableMultiView: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;

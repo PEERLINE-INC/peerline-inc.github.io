@@ -111,6 +111,21 @@ declare const meta: {
                 };
             };
         };
+        disableClip: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        disableTag: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        disableMultiView: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
         onBack: {
             description: string;
             action: string;
@@ -193,6 +208,9 @@ declare const meta: {
             title: string;
             iconUrl: string;
         }[];
+        disableClip: false;
+        disableTag: false;
+        disableMultiView: false;
         backIconType: "arrowLeft";
     };
 };
