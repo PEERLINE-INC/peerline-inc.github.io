@@ -5,6 +5,7 @@ interface ControlsProps {
     onBack?: () => void;
     onClickTagButton?: () => void;
     seekTo: (seconds: number, type: 'seconds' | 'fraction') => void;
+    seekToLive: () => void;
 }
 export declare function Controls(props: ControlsProps): import("react/jsx-runtime").JSX.Element;
 export {};

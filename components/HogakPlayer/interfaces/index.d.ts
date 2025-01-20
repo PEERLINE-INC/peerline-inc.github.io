@@ -27,6 +27,7 @@ export type OnClickAddTagEventObject = {
 export type HogakPlayerProps = {
     title?: string;
     isPlay?: boolean;
+    isLive?: boolean;
     setIsPlay?: (isPlay: boolean) => void;
     onBack?: () => void;
     backIconType?: 'close' | 'arrowLeft';

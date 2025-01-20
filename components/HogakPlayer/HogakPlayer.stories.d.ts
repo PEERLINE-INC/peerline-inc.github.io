@@ -13,6 +13,11 @@ declare const meta: {
             description: string;
             type: "string";
         };
+        isLive: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
         url: {
             defaultValue: string;
             description: string;
@@ -171,6 +176,7 @@ declare const meta: {
     };
     args: {
         title: string;
+        isLive: true;
         url: string;
         width: undefined;
         height: undefined;

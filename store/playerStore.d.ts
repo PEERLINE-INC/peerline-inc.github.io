@@ -1,6 +1,8 @@
 interface PlayerState {
     url: string;
     setUrl: (url: string) => void;
+    isLive: boolean;
+    setIsLive: (isLive: boolean) => void;
     title: string;
     setTitle: (title: string) => void;
     pip: boolean;
