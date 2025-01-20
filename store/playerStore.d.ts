@@ -37,6 +37,8 @@ interface PlayerState {
     setIsViewThumbMarker: (isViewThumbMarker: boolean) => void;
     isShowTagSaveView: boolean;
     setIsShowTagSaveView: (isShowTagSaveView: boolean) => void;
+    isPanoramaMode: boolean;
+    setIsPanoramaMode: (isPanoramaMode: boolean) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;

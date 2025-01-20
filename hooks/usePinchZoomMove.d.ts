@@ -14,5 +14,7 @@ export default function usePinchZoomAndMove(videoRef: React.RefObject<HTMLDivEle
     offset: OffsetState;
     size: SizeState;
     currentScale: number;
+    setScale: (scale: number) => void;
+    setCurrentOffset: (x: number, y: number) => void;
 };
 export {};

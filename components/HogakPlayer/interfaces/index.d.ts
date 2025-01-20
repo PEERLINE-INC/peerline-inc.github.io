@@ -3,7 +3,8 @@ export declare class MultiViewSource {
     title: string;
     description: string;
     url: string;
-    constructor(thumbnailUrl: string, title: string, description: string, url: string);
+    isPanorama?: boolean | undefined;
+    constructor(thumbnailUrl: string, title: string, description: string, url: string, isPanorama?: boolean | undefined);
 }
 export declare class TagProps {
     id: string | number;
@@ -30,6 +31,7 @@ export type HogakPlayerProps = {
     onBack?: () => void;
     backIconType?: 'close' | 'arrowLeft';
     url: string;
+    isPanorama?: boolean;
     width?: number | undefined;
     height?: number | undefined;
     multiViewSources?: MultiViewSource[];
@@ -42,4 +44,5 @@ export type HogakPlayerProps = {
     onClickTagButton?: () => void;
     onClickClipSave?: () => void;
     onClickTagSave?: () => void;
+    onClickTagCancel?: () => void;
 };

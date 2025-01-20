@@ -18,6 +18,11 @@ declare const meta: {
             description: string;
             type: "string";
         };
+        isPanorama: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
         width: {
             defaultValue: number;
             description: string;
@@ -53,6 +58,9 @@ declare const meta: {
                         };
                         url: {
                             name: "string";
+                        };
+                        isPanorama: {
+                            name: "boolean";
                         };
                     };
                 };
@@ -141,6 +149,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onClickTagCancel: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -156,12 +168,20 @@ declare const meta: {
         onClickTagButton: () => void;
         onClickClipSave: () => void;
         onClickTagSave: () => void;
-        multiViewSources: {
+        onClickTagCancel: () => void;
+        multiViewSources: ({
             thumbnailUrl: string;
             title: string;
             description: string;
             url: string;
-        }[];
+            isPanorama: false;
+        } | {
+            thumbnailUrl: string;
+            title: string;
+            description: string;
+            url: string;
+            isPanorama: true;
+        })[];
         tags: {
             id: string;
             seconds: number;
