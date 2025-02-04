@@ -176,7 +176,7 @@ declare const meta: {
     };
     args: {
         title: string;
-        isLive: true;
+        isLive: false;
         url: string;
         width: undefined;
         height: undefined;
