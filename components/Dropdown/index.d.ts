@@ -7,6 +7,7 @@ interface DropdownProps {
     options: Option[];
     defaultValue?: string | number;
     onChangeValue?: (value: Option) => void;
+    disabled?: boolean;
 }
-declare const Dropdown: ({ options, defaultValue, onChangeValue }: DropdownProps) => import("react/jsx-runtime").JSX.Element;
+declare const Dropdown: ({ options, defaultValue, onChangeValue, disabled }: DropdownProps) => import("react/jsx-runtime").JSX.Element;
 export default Dropdown;

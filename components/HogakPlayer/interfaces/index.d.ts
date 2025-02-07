@@ -49,4 +49,6 @@ export type HogakPlayerProps = {
     disableClip?: boolean;
     disableTag?: boolean;
     disableMultiView?: boolean;
+    enablePrerollAd?: boolean;
+    prerollAdUrl?: string;
 };

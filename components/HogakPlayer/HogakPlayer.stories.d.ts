@@ -173,6 +173,16 @@ declare const meta: {
             description: string;
             action: string;
         };
+        enablePrerollAd: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        prerollAdUrl: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
     };
     args: {
         title: string;
@@ -218,6 +228,8 @@ declare const meta: {
         disableTag: false;
         disableMultiView: false;
         backIconType: "arrowLeft";
+        enablePrerollAd: true;
+        prerollAdUrl: string;
     };
 };
 export default meta;
