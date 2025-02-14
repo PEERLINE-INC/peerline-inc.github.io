@@ -228,8 +228,10 @@ declare const meta: {
         disableTag: false;
         disableMultiView: false;
         backIconType: "arrowLeft";
-        enablePrerollAd: true;
+        enablePrerollAd: false;
         prerollAdUrl: string;
+        enableScoreBoardOverlay: true;
+        scoreBoardOverlayUrl: string;
     };
 };
 export default meta;

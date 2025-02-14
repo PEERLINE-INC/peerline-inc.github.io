@@ -47,6 +47,10 @@ interface PlayerState {
     setIsDisableTag: (isDisableTag: boolean) => void;
     isDisableMultiView: boolean;
     setIsDisableMultiView: (isDisableMultiView: boolean) => void;
+    enableScoreBoardOverlay: boolean;
+    setEnableScoreBoardOverlay: (enableScoreBoardOverlay: boolean) => void;
+    scoreBoardOverlayUrl: string;
+    setScoreBoardOverlayUrl: (scoreBoardOverlayUrl: string) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;

@@ -51,4 +51,6 @@ export type HogakPlayerProps = {
     disableMultiView?: boolean;
     enablePrerollAd?: boolean;
     prerollAdUrl?: string;
+    enableScoreBoardOverlay?: boolean;
+    scoreBoardOverlayUrl?: string;
 };
