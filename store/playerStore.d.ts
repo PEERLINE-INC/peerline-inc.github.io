@@ -17,6 +17,8 @@ interface PlayerState {
     setDuration: (duration: number) => void;
     played: number;
     setPlayed: (played: number) => void;
+    isMute: boolean;
+    setIsMute: (isMute: boolean) => void;
     volume: number;
     setVolume: (volume: number) => void;
     speed: number;
@@ -51,6 +53,10 @@ interface PlayerState {
     setEnableScoreBoardOverlay: (enableScoreBoardOverlay: boolean) => void;
     scoreBoardOverlayUrl: string;
     setScoreBoardOverlayUrl: (scoreBoardOverlayUrl: string) => void;
+    offsetStart: number;
+    setOffsetStart: (offsetStart: number) => void;
+    offsetEnd: number;
+    setOffsetEnd: (offsetEnd: number) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;

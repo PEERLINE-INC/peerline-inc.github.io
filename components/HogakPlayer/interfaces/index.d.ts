@@ -28,6 +28,7 @@ export type HogakPlayerProps = {
     title?: string;
     isPlay?: boolean;
     isLive?: boolean;
+    isAutoplay?: boolean;
     setIsPlay?: (isPlay: boolean) => void;
     onBack?: () => void;
     backIconType?: 'close' | 'arrowLeft';
@@ -53,4 +54,6 @@ export type HogakPlayerProps = {
     prerollAdUrl?: string;
     enableScoreBoardOverlay?: boolean;
     scoreBoardOverlayUrl?: string;
+    offsetStart?: number;
+    offsetEnd?: number;
 };

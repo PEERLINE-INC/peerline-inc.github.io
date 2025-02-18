@@ -183,6 +183,21 @@ declare const meta: {
             description: string;
             type: "string";
         };
+        isAutoplay: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        offsetStart: {
+            defaultValue: number;
+            description: string;
+            type: "number";
+        };
+        offsetEnd: {
+            defaultValue: number;
+            description: string;
+            type: "number";
+        };
     };
     args: {
         title: string;
@@ -191,7 +206,7 @@ declare const meta: {
         width: undefined;
         height: undefined;
         isPlay: false;
-        setIsPlay: () => void;
+        isAutoplay: false;
         onBack: () => void;
         onClickAddTag: (data: OnClickAddTagEventObject) => void;
         onChangeClipDuration: (data: number[]) => void;
@@ -232,6 +247,8 @@ declare const meta: {
         prerollAdUrl: string;
         enableScoreBoardOverlay: true;
         scoreBoardOverlayUrl: string;
+        offsetStart: number;
+        offsetEnd: number;
     };
 };
 export default meta;
