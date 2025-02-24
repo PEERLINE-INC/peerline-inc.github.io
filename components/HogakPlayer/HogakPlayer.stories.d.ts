@@ -173,6 +173,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onPlay: {
+            description: string;
+            action: string;
+        };
         enablePrerollAd: {
             defaultValue: boolean;
             description: string;
@@ -215,6 +219,7 @@ declare const meta: {
         onClickClipSave: () => void;
         onClickTagSave: () => void;
         onClickTagCancel: () => void;
+        onPlay: () => true;
         multiViewSources: ({
             thumbnailUrl: string;
             title: string;
