@@ -202,6 +202,16 @@ declare const meta: {
             description: string;
             type: "number";
         };
+        eventId: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
+        clipThumbnailApiHost: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
     };
     args: {
         title: string;
@@ -254,6 +264,8 @@ declare const meta: {
         scoreBoardOverlayUrl: string;
         offsetStart: number;
         offsetEnd: number;
+        eventId: string;
+        clipThumbnailApiHost: string;
     };
 };
 export default meta;
