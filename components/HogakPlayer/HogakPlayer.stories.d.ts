@@ -212,6 +212,19 @@ declare const meta: {
             description: string;
             type: "string";
         };
+        enableLeftRightArrowButton: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
+        onClickLeftArrowButton: {
+            description: string;
+            action: string;
+        };
+        onClickRightArrowButton: {
+            description: string;
+            action: string;
+        };
     };
     args: {
         title: string;
@@ -266,6 +279,9 @@ declare const meta: {
         offsetEnd: number;
         eventId: string;
         clipThumbnailApiHost: string;
+        enableLeftRightArrowButton: false;
+        onClickLeftArrowButton: () => void;
+        onClickRightArrowButton: () => void;
     };
 };
 export default meta;

@@ -59,4 +59,7 @@ export type HogakPlayerProps = {
     offsetEnd?: number;
     eventId?: string;
     clipThumbnailApiHost?: string;
+    enableLeftRightArrowButton?: boolean;
+    onClickLeftArrowButton?: () => void;
+    onClickRightArrowButton?: () => void;
 };

@@ -57,6 +57,12 @@ interface PlayerState {
     setOffsetStart: (offsetStart: number) => void;
     offsetEnd: number;
     setOffsetEnd: (offsetEnd: number) => void;
+    enableLeftRightArrowButton: boolean;
+    setEnableLeftRightArrowButton: (enableLeftRightArrowButton: boolean) => void;
+    onClickLeftArrowButton: () => void;
+    setOnClickLeftArrowButton: (onClickLeftArrowButton: () => void) => void;
+    onClickRightArrowButton: () => void;
+    setOnClickRightArrowButton: (onClickRightArrowButton: () => void) => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
