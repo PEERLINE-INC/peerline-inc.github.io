@@ -18,7 +18,17 @@ declare const meta: {
             description: string;
             type: "boolean";
         };
+        disablePlayer: {
+            defaultValue: boolean;
+            description: string;
+            type: "boolean";
+        };
         url: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
+        thumbnailUrl: {
             defaultValue: string;
             description: string;
             type: "string";
@@ -229,7 +239,9 @@ declare const meta: {
     args: {
         title: string;
         isLive: false;
+        disablePlayer: false;
         url: string;
+        thumbnailUrl: string;
         width: undefined;
         height: undefined;
         isPlay: false;
@@ -273,7 +285,7 @@ declare const meta: {
         backIconType: "arrowLeft";
         enablePrerollAd: false;
         prerollAdUrl: string;
-        enableScoreBoardOverlay: true;
+        enableScoreBoardOverlay: false;
         scoreBoardOverlayUrl: string;
         offsetStart: number;
         offsetEnd: number;

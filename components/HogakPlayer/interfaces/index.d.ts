@@ -33,6 +33,7 @@ export type HogakPlayerProps = {
     onBack?: () => void;
     backIconType?: 'close' | 'arrowLeft';
     url: string;
+    thumbnailUrl?: string;
     isPanorama?: boolean;
     width?: number | undefined;
     height?: number | undefined;
@@ -51,6 +52,7 @@ export type HogakPlayerProps = {
     disableClip?: boolean;
     disableTag?: boolean;
     disableMultiView?: boolean;
+    disablePlayer?: boolean;
     enablePrerollAd?: boolean;
     prerollAdUrl?: string;
     enableScoreBoardOverlay?: boolean;

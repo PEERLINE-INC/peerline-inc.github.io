@@ -5,7 +5,7 @@ interface Option {
 }
 interface DropdownProps {
     options: Option[];
-    defaultValue?: string | number;
+    defaultValue?: string | number | null;
     onChangeValue?: (value: Option) => void;
     disabled?: boolean;
     onChangeOpen?: (isOpen: boolean) => void;

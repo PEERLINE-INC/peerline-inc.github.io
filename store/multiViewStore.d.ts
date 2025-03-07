@@ -5,6 +5,7 @@ interface MultiViewState {
     setMultiViewSources: (multiViewSources: MultiViewSource[]) => void;
     pendingSeek: number | null;
     setPendingSeek: (pendingSeek: number | null) => void;
+    resetMultiViewStore: () => void;
 }
 declare const useMultiViewStore: import('zustand').UseBoundStore<import('zustand').StoreApi<MultiViewState>>;
 export default useMultiViewStore;

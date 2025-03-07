@@ -5,6 +5,7 @@ interface TagState {
     setTags: (tags: TagProps[]) => void;
     tagMenus: TagMenuProps[];
     setTagMenus: (tagMenus: TagMenuProps[]) => void;
+    resetTagStore: () => void;
 }
 declare const useTagStore: import('zustand').UseBoundStore<import('zustand').StoreApi<TagState>>;
 export default useTagStore;

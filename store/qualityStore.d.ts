@@ -3,7 +3,7 @@ import { default as QualityLevel } from 'videojs-contrib-quality-levels/dist/typ
 interface QualityState {
     qualityLevels: QualityLevel[];
     setQualityLevels: (callback: (prev: QualityLevel[]) => QualityLevel[]) => void;
-    currentQuality: number;
+    currentQuality: number | null;
     setCurrentQuality: (quality: number) => void;
     clearQualityLevels: () => void;
 }

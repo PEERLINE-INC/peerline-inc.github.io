@@ -1,6 +1,8 @@
 interface PlayerState {
     url: string;
     setUrl: (url: string) => void;
+    thumbnailUrl: string;
+    setThumbnailUrl: (thumbnailUrl: string) => void;
     isLive: boolean;
     setIsLive: (isLive: boolean) => void;
     title: string;
@@ -49,6 +51,8 @@ interface PlayerState {
     setIsDisableTag: (isDisableTag: boolean) => void;
     isDisableMultiView: boolean;
     setIsDisableMultiView: (isDisableMultiView: boolean) => void;
+    isDisablePlayer: boolean;
+    setIsDisablePlayer: (isDisablePlayer: boolean) => void;
     enableScoreBoardOverlay: boolean;
     setEnableScoreBoardOverlay: (enableScoreBoardOverlay: boolean) => void;
     scoreBoardOverlayUrl: string;
@@ -63,6 +67,9 @@ interface PlayerState {
     setOnClickLeftArrowButton: (onClickLeftArrowButton: () => void) => void;
     onClickRightArrowButton: () => void;
     setOnClickRightArrowButton: (onClickRightArrowButton: () => void) => void;
+    isShowChromecastButton: boolean;
+    setIsShowChromecastButton: (isShowChromecastButton: boolean) => void;
+    resetPlayerStore: () => void;
 }
 declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
 export default usePlayerStore;
