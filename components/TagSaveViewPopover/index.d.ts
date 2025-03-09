@@ -1,4 +1,7 @@
+import { createPlayerStore } from '../../store/playerStore';
+
 interface TagSaveViewPopoverProps {
+    playerStore: ReturnType<typeof createPlayerStore>;
     isShow: boolean;
     onSave?: () => void;
     onCancel?: () => void;

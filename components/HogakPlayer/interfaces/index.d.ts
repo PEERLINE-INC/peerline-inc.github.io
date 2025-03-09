@@ -59,6 +59,7 @@ export type HogakPlayerProps = {
     scoreBoardOverlayUrl?: string;
     offsetStart?: number;
     offsetEnd?: number;
+    offsetSeek?: number;
     eventId?: string;
     clipThumbnailApiHost?: string;
     enableLeftRightArrowButton?: boolean;

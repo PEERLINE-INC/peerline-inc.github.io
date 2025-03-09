@@ -212,6 +212,11 @@ declare const meta: {
             description: string;
             type: "number";
         };
+        offsetSeek: {
+            defaultValue: number;
+            description: string;
+            type: "number";
+        };
         eventId: {
             defaultValue: string;
             description: string;
@@ -245,7 +250,7 @@ declare const meta: {
         width: undefined;
         height: undefined;
         isPlay: false;
-        isAutoplay: false;
+        isAutoplay: true;
         onBack: () => void;
         onClickAddTag: (data: OnClickAddTagEventObject) => void;
         onChangeClipDuration: (data: number[]) => void;
@@ -289,6 +294,7 @@ declare const meta: {
         scoreBoardOverlayUrl: string;
         offsetStart: number;
         offsetEnd: number;
+        offsetSeek: number;
         eventId: string;
         clipThumbnailApiHost: string;
         enableLeftRightArrowButton: false;

@@ -1,6 +1,8 @@
 import { default as Player } from 'video.js/dist/types/player';
+import { createPlayerStore } from '../../store/playerStore';
 
 interface ControlsProps {
+    playerStore: ReturnType<typeof createPlayerStore>;
     playerRef: React.RefObject<Player | null>;
     airplayRef: React.RefObject<{
         start: () => void;

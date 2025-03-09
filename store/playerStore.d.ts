@@ -69,7 +69,13 @@ interface PlayerState {
     setOnClickRightArrowButton: (onClickRightArrowButton: () => void) => void;
     isShowChromecastButton: boolean;
     setIsShowChromecastButton: (isShowChromecastButton: boolean) => void;
+    isShowErrorView: boolean;
+    setIsShowErrorView: (isShowErrorView: boolean) => void;
+    errorMessage: string;
+    setErrorMessage: (errorMessage: string) => void;
+    offsetSeek: number;
+    setOffsetSeek: (offsetSeek: number) => void;
     resetPlayerStore: () => void;
 }
-declare const usePlayerStore: import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
-export default usePlayerStore;
+export declare function createPlayerStore(): import('zustand').UseBoundStore<import('zustand').StoreApi<PlayerState>>;
+export {};
