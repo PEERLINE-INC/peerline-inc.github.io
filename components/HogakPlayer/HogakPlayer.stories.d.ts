@@ -240,6 +240,11 @@ declare const meta: {
             description: string;
             action: string;
         };
+        errorMessage: {
+            defaultValue: string;
+            description: string;
+            type: "string";
+        };
     };
     args: {
         title: string;
@@ -300,6 +305,7 @@ declare const meta: {
         enableLeftRightArrowButton: false;
         onClickLeftArrowButton: () => void;
         onClickRightArrowButton: () => void;
+        errorMessage: string;
     };
 };
 export default meta;
