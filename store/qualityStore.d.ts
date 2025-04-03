@@ -1,7 +1,9 @@
 import { default as QualityLevel } from 'videojs-contrib-quality-levels/dist/types/quality-level';
 
 interface QualityState {
-    qualityLevels: QualityLevel[];
+    qualityLevels: (QualityLevel & {
+        url?: string;
+    })[];
     setQualityLevels: (callback: (prev: QualityLevel[]) => QualityLevel[]) => void;
     currentQuality: number | null;
     setCurrentQuality: (quality: number) => void;

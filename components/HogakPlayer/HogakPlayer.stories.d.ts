@@ -240,6 +240,10 @@ declare const meta: {
             description: string;
             action: string;
         };
+        onClickChromecastButton: {
+            description: string;
+            action: string;
+        };
         errorMessage: {
             defaultValue: string;
             description: string;
@@ -305,6 +309,7 @@ declare const meta: {
         enableLeftRightArrowButton: false;
         onClickLeftArrowButton: () => void;
         onClickRightArrowButton: () => void;
+        onClickChromecastButton: () => void;
         errorMessage: string;
     };
 };

@@ -66,4 +66,5 @@ export type HogakPlayerProps = {
     enableLeftRightArrowButton?: boolean;
     onClickLeftArrowButton?: () => void;
     onClickRightArrowButton?: () => void;
+    onClickChromecastButton?: () => void;
 };

@@ -5,6 +5,7 @@ interface RangeSliderProps {
     min: number;
     max: number;
     onChange?: (value: number[]) => void;
+    onDragStart?: (value: number[]) => void;
     onDragEnd?: (value: number[]) => void;
     onChangeEnd?: (value: number[]) => void;
     minDistance?: number;
